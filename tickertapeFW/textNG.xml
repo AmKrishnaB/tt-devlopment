@@ -1,11 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
  
-<suite thread-count="1" verbose="1" name="tickertapeFW" annotations="JDK" parallel="tests">
+<suite thread-count="5" verbose="1" name="tickertapeFW" annotations="JDK" parallel="tests">
          
   <test name="tickertapeFW">
 <classes>
   <class name="tickertapeFW.landingPage"/>
   <class name="tickertapeFW.loginFunctionality"/>
+  <class name="tickertapeFW.logoutFunctionality"/>
+  <class name="tickertapeFW.mfScreener"/>
+  <class name="tickertapeFW.mmi"/>
+  <class name="tickertapeFW.stockDeals"/>
+  <class name="tickertapeFW.watchlist"/>
+  <class name="tickertapeFW.portfolio"/>
+  <class name="tickertapeFW.goPro"/>
+  <class name="tickertapeFW.stockSearch"/>
 </classes>
    </test>
 </suite>

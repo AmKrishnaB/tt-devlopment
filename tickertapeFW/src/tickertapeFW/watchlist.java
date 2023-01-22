@@ -32,8 +32,9 @@ public class watchlist extends mainDriver{
 	
 	@Test(priority = 2)
 	public void loginHoverTest() throws InterruptedException {
+	Thread.sleep(1000);
 	common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
-	Thread.sleep(5000);
+	Thread.sleep(1000);
 	boolean popup = common.isDisplayed("//div[@class=\"jsx-160258998 overflowmenu-root theme-dark transition-all transition-all-01\"]");
 	Assert.assertTrue(popup);
 	}
@@ -50,6 +51,7 @@ public class watchlist extends mainDriver{
 	
 	@Test(priority =4)
 	public void watchlist_button_Test() throws InterruptedException {
+	Thread.sleep(1000);
     common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
     Thread.sleep(1000);
     common.click("//span[@class=\"jsx-1033646475 d-flex watchlist-image typography-body-medium-m\"]/..");
@@ -60,7 +62,7 @@ public class watchlist extends mainDriver{
     System.out.println("pop up not displayed");
     }
 		
-    Thread.sleep(5000);
+    Thread.sleep(1000);
     common.click("//div[@id=\"app-container\"]/div/div/div/div/aside/div[1]/div[1]/a/span");
     boolean text = common.isDisplayed("//button[@class=\"jsx-2679829868 jsx-2491292752 regular primary button-root\"]/..");
 	Assert.assertTrue(text);

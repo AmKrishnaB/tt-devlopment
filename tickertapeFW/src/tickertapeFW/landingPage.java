@@ -64,8 +64,9 @@ public class landingPage extends mainDriver{
 	}
 	
 	@Test(priority = 8)
-	public void backToHomeTextdisplayTest() {
+	public void backToHomeTextdisplayTest() throws InterruptedException {
 		common.hover("//span[@data-toggle=\"products\"]");
+		Thread.sleep(1000);
 		common.isDisplayed("//span[text()=\"Back to home\"]");
 	}
 	
@@ -153,6 +154,7 @@ public class landingPage extends mainDriver{
 	
 	@Test(priority = 24)
 	public void loginButtonClickTest() throws InterruptedException {
+		Thread.sleep(1000);
 		common.hover("//i[@class=\"jsx-24004412 icon-chevron-down text-teritiary ml4 text-16\"]");
 		common.click("//button[contains(@class,\"jsx-2679829868 \")]");
 		Thread.sleep(2000);
@@ -164,12 +166,14 @@ public class landingPage extends mainDriver{
 	@Test(priority = 25)
 	public void portfolioVisibilityTest() throws InterruptedException {
 		common.hover("//i[@class=\"jsx-24004412 icon-chevron-down text-teritiary ml4 text-16\"]");
+		Thread.sleep(1000);
 		common.isDisplayed("//i[@class=\"jsx-1033646475 relative icon-portfolio text-20\"]");
 	}
 	
 	@Test(priority = 26)
 	public void portfolioclickTest() throws InterruptedException {
 		common.hover("//i[@class=\"jsx-24004412 icon-chevron-down text-teritiary ml4 text-16\"]");
+		Thread.sleep(1000);
 		common.click("//i[@class=\"jsx-1033646475 relative icon-portfolio text-20\"]");
 		Thread.sleep(8000);
 		String exp_URL=driver.getCurrentUrl();
