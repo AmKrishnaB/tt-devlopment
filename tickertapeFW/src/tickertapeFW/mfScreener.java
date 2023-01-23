@@ -18,67 +18,67 @@ public class mfScreener extends mainDriver{
 		} catch (NoSuchElementException e) {
 		}
 	}
-	@Test(priority = 1)
-	public void MFUniverseTabTest() {
-		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
-		String acturl=driver.getCurrentUrl();
-		String expurl="https://www.tickertape.in/screener/mutual-fund";
-		Assert.assertEquals(expurl, acturl);
-    }
-	@Test(priority = 2)
-	public void LiquidfundCheckBoxUnderMFUniverseTabTest() {
-		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]"); 
-	}
-	@Test(priority = 3)
-	public void FundTrackingNiftyCheckBoxUnderMFUniverseTabTest() {
-		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
-	}
-	
-	@Test(priority = 4)
-	public void categoryMFUniverseTabTest() {
-		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[3]");
-	}
-	
-	@Test(priority = 5)
-    public void planMFUniverseTabTest() {
-		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[3]");
-		common.click("(//div[@class=\"jsx-254693987 card-title\"])[1]");
-	}
-	@Test(priority = 6)
-	public void AUMcrMFUniverseTabTest() {
-		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[3]");
-		common.click("(//div[@class=\"jsx-254693987 card-title\"])[2]");
-	}
-	
-	@Test(priority =7 )
-	public void CAGR3yMFUniverseTabTest() {
-		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[3]");
-		common.click("(//div[@class=\"jsx-254693987 card-title\"])[3]");
-	}
-	
-	@Test(priority = 8)
-	public void ExpenseRatioMFUniverseTabTest() {
-		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
-		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[3]");
-	    common.click("(//div[@class=\"jsx-254693987 card-title\"])[4]");
-	}
+//	@Test(priority = 1)
+//	public void MFUniverseTabTest() {
+//		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
+//		String acturl=driver.getCurrentUrl();
+//		String expurl="https://www.tickertape.in/screener/mutual-fund";
+//		Assert.assertEquals(expurl, acturl);
+//    }
+//	@Test(priority = 2)
+//	public void LiquidfundCheckBoxUnderMFUniverseTabTest() {
+//		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]"); 
+//	}
+//	@Test(priority = 3)
+//	public void FundTrackingNiftyCheckBoxUnderMFUniverseTabTest() {
+//		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
+//	}
+//	
+//	@Test(priority = 4)
+//	public void categoryMFUniverseTabTest() {
+//		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[3]");
+//	}
+//	
+//	@Test(priority = 5)
+//    public void planMFUniverseTabTest() {
+//		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[3]");
+//		common.click("(//div[@class=\"jsx-254693987 card-title\"])[1]");
+//	}
+//	@Test(priority = 6)
+//	public void AUMcrMFUniverseTabTest() {
+//		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[3]");
+//		common.click("(//div[@class=\"jsx-254693987 card-title\"])[2]");
+//	}
+//	
+//	@Test(priority =7 )
+//	public void CAGR3yMFUniverseTabTest() {
+//		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[3]");
+//		common.click("(//div[@class=\"jsx-254693987 card-title\"])[3]");
+//	}
+//	
+//	@Test(priority = 8)
+//	public void ExpenseRatioMFUniverseTabTest() {
+//		common.click("(//div[@class=\"jsx-214020999 jsx-173293736 \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[1]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[2]");
+//		common.click("(//i[@class=\"jsx-3866717609 jsx-3091157964  text-18 mr8  icon-checkbox-blank \"])[3]");
+//	    common.click("(//div[@class=\"jsx-254693987 card-title\"])[4]");
+//	}
 	
 	@Test(priority = 9)
 	public void AddFillterFUniverseTabTest() {

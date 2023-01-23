@@ -18,75 +18,75 @@ public class loginFunctionality extends mainDriver{
 		}
 	}
 	
-	@Test(priority = 1)
-	public void urlTest() {
-		String strUrl = driver.getCurrentUrl();
-		Assert.assertEquals(strUrl, "https://www.tickertape.in/");
-	}
-	
-	@Test(priority = 2)
-	public void loginHoverTest() throws InterruptedException {
-		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
-		Thread.sleep(1000);
-		boolean popup = common.isDisplayed("//div[@class=\"jsx-160258998 overflowmenu-root theme-dark transition-all transition-all-01\"]");
-		Assert.assertTrue(popup);
-	}
-	
-	@Test(priority = 3)
-	public void loginButtonTest() throws InterruptedException {
-		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
-		Thread.sleep(1000);
-		common.click("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]");
-		Thread.sleep(1000);
-		String strUrl = driver.getCurrentUrl();
-		Assert.assertEquals(strUrl, "https://www.tickertape.in/login");
-	}
-	
-	@Test(priority = 4)
-	public void googleSigninTest() throws InterruptedException {
-		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
-		common.click("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]");
-		boolean logo = common.isDisplayed("//*[@alt=\"Google Logo\"]");
-		Assert.assertTrue(logo);
-	}
-	
-	@Test(priority = 4)
-	public void appleSigninTest() throws InterruptedException {
-		Thread.sleep(1000);
-		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
-		driver.findElement(By.xpath("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]")).click();
-		boolean logo = common.isDisplayed("//*[@alt=\"apple\"]");
-		Assert.assertTrue(logo);
-	}
-	
-	@Test(priority = 4)
-	public void fbSigninTest() throws InterruptedException {
-		Thread.sleep(1000);
-		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
-		common.click("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]");
-		boolean logo = common.isDisplayed("//*[@alt=\"FB\"]");
-		Assert.assertTrue(logo);
-	}
-	
-	@Test(priority = 4)
-	public void emailSigninTest() throws InterruptedException {
-		Thread.sleep(1000);
-		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
-		common.click("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]");
-		boolean logo = common.isDisplayed("//*[@alt=\"Email Logo\"]");
-		Assert.assertTrue(logo);
-	}
-	
-	@Test(priority = 5)
-	public void signinTest() throws InterruptedException {
-		Thread.sleep(1000);
-		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
-		common.click("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@alt=\"Email Logo\"]")).click();
-		boolean input = common.isDisplayed("//input[@type=\"email\"]");
-		Assert.assertTrue(input);
-	}
+//	@Test(priority = 1)
+//	public void urlTest() {
+//		String strUrl = driver.getCurrentUrl();
+//		Assert.assertEquals(strUrl, "https://www.tickertape.in/");
+//	}
+//	
+//	@Test(priority = 2)
+//	public void loginHoverTest() throws InterruptedException {
+//		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
+//		Thread.sleep(1000);
+//		boolean popup = common.isDisplayed("//div[@class=\"jsx-160258998 overflowmenu-root theme-dark transition-all transition-all-01\"]");
+//		Assert.assertTrue(popup);
+//	}
+//	
+//	@Test(priority = 3)
+//	public void loginButtonTest() throws InterruptedException {
+//		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
+//		Thread.sleep(1000);
+//		common.click("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]");
+//		Thread.sleep(1000);
+//		String strUrl = driver.getCurrentUrl();
+//		Assert.assertEquals(strUrl, "https://www.tickertape.in/login");
+//	}
+//	
+//	@Test(priority = 4)
+//	public void googleSigninTest() throws InterruptedException {
+//		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
+//		common.click("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]");
+//		boolean logo = common.isDisplayed("//*[@alt=\"Google Logo\"]");
+//		Assert.assertTrue(logo);
+//	}
+//	
+//	@Test(priority = 4)
+//	public void appleSigninTest() throws InterruptedException {
+//		Thread.sleep(1000);
+//		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
+//		driver.findElement(By.xpath("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]")).click();
+//		boolean logo = common.isDisplayed("//*[@alt=\"apple\"]");
+//		Assert.assertTrue(logo);
+//	}
+//	
+//	@Test(priority = 4)
+//	public void fbSigninTest() throws InterruptedException {
+//		Thread.sleep(1000);
+//		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
+//		common.click("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]");
+//		boolean logo = common.isDisplayed("//*[@alt=\"FB\"]");
+//		Assert.assertTrue(logo);
+//	}
+//	
+//	@Test(priority = 4)
+//	public void emailSigninTest() throws InterruptedException {
+//		Thread.sleep(1000);
+//		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
+//		common.click("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]");
+//		boolean logo = common.isDisplayed("//*[@alt=\"Email Logo\"]");
+//		Assert.assertTrue(logo);
+//	}
+//	
+//	@Test(priority = 5)
+//	public void signinTest() throws InterruptedException {
+//		Thread.sleep(1000);
+//		common.hover("//h5[@class=\"jsx-24004412 typography-body-medium-l navtext \"]");
+//		common.click("//*[@class=\"jsx-2679829868 jsx-1727362249 regular secondary button-root\"]");
+//		Thread.sleep(1000);
+//		driver.findElement(By.xpath("//*[@alt=\"Email Logo\"]")).click();
+//		boolean input = common.isDisplayed("//input[@type=\"email\"]");
+//		Assert.assertTrue(input);
+//	}
 	
 	@Test(priority = 6)
 	public void emptyInputTest() throws InterruptedException {

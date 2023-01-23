@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>21/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jan 22 18:01:32 IST 2023</td>
+<td>Started on:</td><td>Sun Jan 22 20:54:46 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>360 seconds (360950 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17263 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,178 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tickertapeFW.watchlist.time_period_1M_Test()'><b>time_period_1M_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //span[@class=&quot;jsx-1033646475 d-flex watchlist-image typography-body-medium-m&quot;]/.. (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63274}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63274/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1997671c420099772f909a9e50ef52f2
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at tickertapeFW.common.click(common.java:15)
-	at tickertapeFW.watchlist.time_period_1M_Test(watchlist.java:404)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace735738459", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace735738459'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //span[@class=&quot;jsx-1033646475 d-flex watchlist-image typography-body-medium-m&quot;]/.. (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63274}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63274/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1997671c420099772f909a9e50ef52f2
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at tickertapeFW.common.click(common.java:15)
-	at tickertapeFW.watchlist.time_period_1M_Test(watchlist.java:404)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>12</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.fundamental_Test()'><b>fundamental_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //button[@class=&quot;jsx-2679829868 jsx-2491292752 regular primary button-root&quot;]/.. (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63121/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ba52b3461c847bf8d85cf8b9f86b7832
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at tickertapeFW.common.click(common.java:15)
-	at tickertapeFW.watchlist.fundamental_Test(watchlist.java:362)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1538125216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1538125216'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //button[@class=&quot;jsx-2679829868 jsx-2491292752 regular primary button-root&quot;]/.. (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63121/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ba52b3461c847bf8d85cf8b9f86b7832
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at tickertapeFW.common.click(common.java:15)
-	at tickertapeFW.watchlist.fundamental_Test(watchlist.java:362)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>20</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -247,110 +75,20 @@ Session ID: ba52b3461c847bf8d85cf8b9f86b7832
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tickertapeFW.watchlist.watchlist_button_Test()'><b>watchlist_button_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>8</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.search_button_Test()'><b>search_button_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>12</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.watchlist_icon_logo_Test()'><b>watchlist_icon_logo_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>15</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.search_stocks_button_Test()'><b>search_stocks_button_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>9</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.equity_button_Test()'><b>equity_button_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>5</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.edit_saved_watchlist_Test()'><b>edit_saved_watchlist_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>11</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.relatedtext_tickers_Test()'><b>relatedtext_tickers_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>14</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.time_period_6M_Test()'><b>time_period_6M_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>11</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.time_period_3M_Test()'><b>time_period_3M_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>11</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.search_text_Test()'><b>search_text_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>9</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.time_period_1Y_Test()'><b>time_period_1Y_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>11</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.performance_Test()'><b>performance_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>11</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.Technical_test()'><b>Technical_test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>11</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.Forecasts_test()'><b>Forecasts_test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>11</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.Activity_test()'><b>Activity_test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>11</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.url_Test()'><b>url_Test</b><br>Test class: tickertapeFW.watchlist</td>
+<td title='tickertapeFW.landingPage.SearchBoxDisplayTest()'><b>SearchBoxDisplayTest</b><br>Test class: tickertapeFW.landingPage</td>
 <td></td>
 <td>0</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
+<td>tickertapeFW.landingPage@16a0ee18</td></tr>
 <tr>
-<td title='tickertapeFW.watchlist.login_button_Test()'><b>login_button_Test</b><br>Test class: tickertapeFW.watchlist</td>
+<td title='tickertapeFW.landingPage.backToHomeTextdisplayTest()'><b>backToHomeTextdisplayTest</b><br>Test class: tickertapeFW.landingPage</td>
 <td></td>
 <td>1</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
+<td>tickertapeFW.landingPage@16a0ee18</td></tr>
 <tr>
-<td title='tickertapeFW.watchlist.group_by_Test()'><b>group_by_Test</b><br>Test class: tickertapeFW.watchlist</td>
+<td title='tickertapeFW.landingPage.searchBoxFunctionalityTest()'><b>searchBoxFunctionalityTest</b><br>Test class: tickertapeFW.landingPage</td>
 <td></td>
-<td>11</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.loginHoverTest()'><b>loginHoverTest</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>5</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.group_by_sector_Test()'><b>group_by_sector_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>11</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
-<tr>
-<td title='tickertapeFW.watchlist.time_period_1D_Test()'><b>time_period_1D_Test</b><br>Test class: tickertapeFW.watchlist</td>
-<td></td>
-<td>10</td>
-<td>tickertapeFW.watchlist@7fee8714</td></tr>
+<td>0</td>
+<td>tickertapeFW.landingPage@16a0ee18</td></tr>
 </table><p>
 </body>
 </html>

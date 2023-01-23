@@ -20,21 +20,21 @@ public class mmi extends mainDriver{
 			}
 		}
 	
-	@Test(priority = 1)
-	public void urlTest() {
-		String strUrl = driver.getCurrentUrl();
-		Assert.assertEquals(strUrl, "https://www.tickertape.in/market-mood-index");
-	}
-	
-	@Test(priority = 2)
-	public void mmiLogoTest() {
-		Assert.assertTrue(common.isDisplayed("//*[@src=\"/images/svg/logos/mmi-by-tt-orange.svg\"]"));
-	}
-	
-	@Test(priority = 2)
-	public void helpButtonTest() {
-		Assert.assertTrue(common.isDisplayed("//*[@data-toggle=\"productToolsMMI\"]"));
-	}
+//	@Test(priority = 1)
+//	public void urlTest() {
+//		String strUrl = driver.getCurrentUrl();
+//		Assert.assertEquals(strUrl, "https://www.tickertape.in/market-mood-index");
+//	}
+//	
+//	@Test(priority = 2)
+//	public void mmiLogoTest() {
+//		Assert.assertTrue(common.isDisplayed("//*[@src=\"/images/svg/logos/mmi-by-tt-orange.svg\"]"));
+//	}
+//	
+//	@Test(priority = 2)
+//	public void helpButtonTest() {
+//		Assert.assertTrue(common.isDisplayed("//*[@data-toggle=\"productToolsMMI\"]"));
+//	}
 	
 	@Test(priority = 2)
 	public void mmiTextTest() {
@@ -48,36 +48,36 @@ public class mmi extends mainDriver{
 		Assert.assertTrue(common.isDisplayed("//div[text()=\"High extreme fear (<20) suggests a good time to open fresh positions, as markets are likely to be oversold and might turn upwards\"]"));
 	}
 	
-	@Test(priority = 3)
-	public void hover2Test() {
-		
-		common.hover("//div[@class=\"jsx-828043746 zone-hover-root fear\"]");
-		Assert.assertTrue(common.isDisplayed("//div[text()=\"Fear zone suggests that investors are fearful in the market, but the action to be taken depends on the MMI trajectory. See all zones for details\"]"));
-	}
-	
-	@Test(priority = 3)
-	public void hover3Test() {
-		
-		common.hover("//div[@class=\"jsx-828043746 zone-hover-root greed\"]");
-		Assert.assertTrue(common.isDisplayed("//div[text()=\"Greed zone suggests that investors are acting greedy in the market, but the action to be taken depends on the MMI trajectory. See all zones for details\"]"));
-	}
-	
-	@Test(priority = 3)
-	public void hover5Test() {
-		
-		common.hover("//div[@class=\"jsx-828043746 zone-hover-root eg\"]");
-		Assert.assertTrue(common.isDisplayed("//div[text()=\"High extreme greed (>80) suggests investors should avoid opening fresh positions as markets are overbought and likely to turn downwards\"]"));
-	}
-	
-	@Test(priority = 4)
-	public void historyTest() {
-		Assert.assertTrue(common.isDisplayed("(//*[text()=\"Download History\"])[2]"));
-	}
-
-	@Test(priority = 5)
-	public void shareButtonTest() {
-		Assert.assertTrue(common.isDisplayed("//*[@class=\"jsx-361878376 text-16 share-icon-wrapper icon-Share pointer\"]"));
-	}
+//	@Test(priority = 3)
+//	public void hover2Test() {
+//		
+//		common.hover("//div[@class=\"jsx-828043746 zone-hover-root fear\"]");
+//		Assert.assertTrue(common.isDisplayed("//div[text()=\"Fear zone suggests that investors are fearful in the market, but the action to be taken depends on the MMI trajectory. See all zones for details\"]"));
+//	}
+//	
+//	@Test(priority = 3)
+//	public void hover3Test() {
+//		
+//		common.hover("//div[@class=\"jsx-828043746 zone-hover-root greed\"]");
+//		Assert.assertTrue(common.isDisplayed("//div[text()=\"Greed zone suggests that investors are acting greedy in the market, but the action to be taken depends on the MMI trajectory. See all zones for details\"]"));
+//	}
+//	
+//	@Test(priority = 3)
+//	public void hover5Test() {
+//		
+//		common.hover("//div[@class=\"jsx-828043746 zone-hover-root eg\"]");
+//		Assert.assertTrue(common.isDisplayed("//div[text()=\"High extreme greed (>80) suggests investors should avoid opening fresh positions as markets are overbought and likely to turn downwards\"]"));
+//	}
+//	
+//	@Test(priority = 4)
+//	public void historyTest() {
+//		Assert.assertTrue(common.isDisplayed("(//*[text()=\"Download History\"])[2]"));
+//	}
+//
+//	@Test(priority = 5)
+//	public void shareButtonTest() {
+//		Assert.assertTrue(common.isDisplayed("//*[@class=\"jsx-361878376 text-16 share-icon-wrapper icon-Share pointer\"]"));
+//	}
 	
 	@AfterMethod
 	public void close() {

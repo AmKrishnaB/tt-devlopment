@@ -72,7 +72,7 @@ public class common extends mainDriver{
 	}
 	}
 	
-	//public static void popup() throws InterruptedException
+	public static void popup() throws InterruptedException
 	{
 		Thread.sleep(10000);
 		try

@@ -3,45 +3,21 @@
 <suite parallel="tests" name="Failed suite [tickertapeFW]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="tests" name="tickertapeFW(failed)">
     <classes>
-      <class name="tickertapeFW.loginFunctionality">
+      <class name="tickertapeFW.stockSearch">
         <methods>
-          <include name="googleSigninTest"/>
           <include name="setup"/>
-          <include name="appleSigninTest"/>
-          <include name="loginButtonTest"/>
-          <include name="close"/>
-          <include name="invalidInputTest"/>
-        </methods>
-      </class> <!-- tickertapeFW.loginFunctionality -->
-      <class name="tickertapeFW.watchlist">
-        <methods>
-          <include name="time_period_1D_Test"/>
-          <include name="search_stocks_button_Test"/>
-          <include name="group_by_Test"/>
-          <include name="group_by_sector_Test"/>
-          <include name="performance_Test"/>
-          <include name="time_period_1Y_Test"/>
-          <include name="time_period_1M_Test"/>
-          <include name="login_button_Test"/>
-          <include name="edit_saved_watchlist_Test"/>
-          <include name="watchlist_button_Test"/>
-          <include name="setup"/>
-          <include name="Technical_test"/>
-          <include name="equity_button_Test"/>
-          <include name="loginHoverTest"/>
+          <include name="verify_dropdown_clickability"/>
+          <include name="verify_dropdown_editable"/>
           <include name="close"/>
         </methods>
-      </class> <!-- tickertapeFW.watchlist -->
-      <class name="tickertapeFW.landingPage">
+      </class> <!-- tickertapeFW.stockSearch -->
+      <class name="tickertapeFW.portfolio">
         <methods>
-          <include name="backToHomeTextdisplayTest"/>
-          <include name="portfolioclickTest"/>
-          <include name="close"/>
-          <include name="portfolioVisibilityTest"/>
-          <include name="setup"/>
-          <include name="loginButtonClickTest"/>
+          <include name="TearDown"/>
+          <include name="VerifySearchStocksButtonPresent"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- tickertapeFW.landingPage -->
+      </class> <!-- tickertapeFW.portfolio -->
     </classes>
   </test> <!-- tickertapeFW(failed) -->
 </suite> <!-- Failed suite [tickertapeFW] -->

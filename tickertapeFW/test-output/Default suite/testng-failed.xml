@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tickertapeFW.watchlist">
+      <class name="tickertapeFW.goPro">
         <methods>
-          <include name="fundamental_Test"/>
-          <include name="time_period_1M_Test"/>
-          <include name="setup"/>
-          <include name="close"/>
+          <include name="Verify3MonthsPlanSelectable"/>
+          <include name="setUp"/>
+          <include name="Verify12MonthsPlanSelectable"/>
+          <include name="Verify1MonthsPlanSelectable"/>
+          <include name="VerifyCouponTabPresent"/>
+          <include name="TearDown"/>
+          <include name="Verify6MonthsPlanSelectable"/>
         </methods>
-      </class> <!-- tickertapeFW.watchlist -->
+      </class> <!-- tickertapeFW.goPro -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
