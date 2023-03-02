@@ -1,4 +1,4 @@
-package tickertapeFW;
+package waste;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;

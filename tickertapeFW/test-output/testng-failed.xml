@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [tickertapeFW]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="tickertapeFW(failed)">
+<suite name="Failed suite [Failed suite [Failed suite [Default suite]]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)(failed)(failed)">
     <classes>
-      <class name="tickertapeFW.stockSearch">
+      <class name="tickertapeFW.mmi">
         <methods>
-          <include name="setup"/>
-          <include name="verify_dropdown_clickability"/>
-          <include name="verify_dropdown_editable"/>
           <include name="close"/>
+          <include name="mmiLogoTest"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- tickertapeFW.stockSearch -->
-      <class name="tickertapeFW.portfolio">
-        <methods>
-          <include name="TearDown"/>
-          <include name="VerifySearchStocksButtonPresent"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- tickertapeFW.portfolio -->
+      </class> <!-- tickertapeFW.mmi -->
     </classes>
-  </test> <!-- tickertapeFW(failed) -->
-</suite> <!-- Failed suite [tickertapeFW] -->
+  </test> <!-- Default test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->

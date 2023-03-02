@@ -1,8 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [tickertapeFW]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="tickertapeFW(failed)">
+<suite parallel="classes" name="Failed suite [tickertapeFW]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="tickertapeFW(failed)">
     <classes>
+      <class name="tickertapeFW.loginFunctionality">
+        <methods>
+          <include name="emptyInputTest"/>
+          <include name="setup"/>
+          <include name="validInputTest"/>
+          <include name="close"/>
+          <include name="invalidInputTest"/>
+        </methods>
+      </class> <!-- tickertapeFW.loginFunctionality -->
+      <class name="tickertapeFW.watchlist">
+        <methods>
+          <include name="url_Test"/>
+          <include name="setup"/>
+          <include name="loginHoverTest"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tickertapeFW.watchlist -->
+      <class name="tickertapeFW.stockDeals">
+        <methods>
+          <include name="logoIconTest"/>
+          <include name="close"/>
+          <include name="urlTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tickertapeFW.stockDeals -->
+      <class name="tickertapeFW.logoutFunctionality">
+        <methods>
+          <include name="setup"/>
+          <include name="logoutTest"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tickertapeFW.logoutFunctionality -->
+      <class name="tickertapeFW.landingPage">
+        <methods>
+          <include name="backToHomeTextdisplayTest"/>
+          <include name="close"/>
+          <include name="SearchBoxDisplayTest"/>
+          <include name="setup"/>
+          <include name="searchBoxFunctionalityTest"/>
+        </methods>
+      </class> <!-- tickertapeFW.landingPage -->
+      <class name="tickertapeFW.mfScreener">
+        <methods>
+          <include name="setup"/>
+          <include name="AddFillterFUniverseTabTest"/>
+          <include name="CustomMFUniverseTabTest"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tickertapeFW.mfScreener -->
+      <class name="tickertapeFW.portfolio">
+        <methods>
+          <include name="TearDown"/>
+          <include name="VerifySearchStocksButtonPresent"/>
+          <include name="setUp"/>
+          <include name="VerifySearchButtonAccessible"/>
+        </methods>
+      </class> <!-- tickertapeFW.portfolio -->
+      <class name="tickertapeFW.mmi">
+        <methods>
+          <include name="hover1Test"/>
+          <include name="close"/>
+          <include name="mmiTextTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tickertapeFW.mmi -->
       <class name="tickertapeFW.stockSearch">
         <methods>
           <include name="setup"/>
@@ -11,13 +76,6 @@
           <include name="close"/>
         </methods>
       </class> <!-- tickertapeFW.stockSearch -->
-      <class name="tickertapeFW.portfolio">
-        <methods>
-          <include name="TearDown"/>
-          <include name="VerifySearchStocksButtonPresent"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- tickertapeFW.portfolio -->
     </classes>
   </test> <!-- tickertapeFW(failed) -->
 </suite> <!-- Failed suite [tickertapeFW] -->
