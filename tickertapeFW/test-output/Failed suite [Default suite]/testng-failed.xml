@@ -3,14 +3,13 @@
 <suite name="Failed suite [Failed suite [Default suite]]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)(failed)">
     <classes>
-      <class name="tickertapeFW.stockDeals">
+      <class name="tickertapeFW.mmi">
         <methods>
-          <include name="box3Test"/>
           <include name="close"/>
-          <include name="box1Test"/>
+          <include name="mmiLogoTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tickertapeFW.stockDeals -->
+      </class> <!-- tickertapeFW.mmi -->
     </classes>
   </test> <!-- Default test(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Default suite]] -->
