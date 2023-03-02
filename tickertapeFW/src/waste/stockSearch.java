@@ -1,4 +1,4 @@
-package tickertapeFW;
+package waste;
 
 import java.util.List;
 

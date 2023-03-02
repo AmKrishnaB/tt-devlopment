@@ -1,60 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="27" passed="24" failed="1" skipped="2">
+<testng-results ignored="9" total="10" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-23T20:54:47 IST" name="tickertapeFW" finished-at="2023-01-23T20:57:24 IST" duration-ms="157570">
+  <suite started-at="2023-03-02T20:52:12 IST" name="Failed suite [Failed suite [Default suite]]" finished-at="2023-03-02T20:52:21 IST" duration-ms="9841">
     <groups>
     </groups>
-    <test started-at="2023-01-23T20:54:47 IST" name="tickertapeFW" finished-at="2023-01-23T20:57:24 IST" duration-ms="157570">
-      <class name="tickertapeFW.portfolio">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tickertapeFW.portfolio@48aca48b]" started-at="2023-01-23T20:54:47 IST" name="setUp" finished-at="2023-01-23T20:54:57 IST" duration-ms="10337" status="PASS">
+    <test started-at="2023-03-02T20:52:12 IST" name="Default test(failed)(failed)" finished-at="2023-03-02T20:52:21 IST" duration-ms="9841">
+      <class name="tickertapeFW.mmi">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mmi@3232a28a]" started-at="2023-03-02T20:52:12 IST" name="setup" finished-at="2023-03-02T20:52:16 IST" duration-ms="4185" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="VerifySearchButtonAccessible()[pri:0, instance:tickertapeFW.portfolio@48aca48b]" started-at="2023-01-23T20:54:57 IST" name="VerifySearchButtonAccessible" finished-at="2023-01-23T20:55:02 IST" duration-ms="5205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySearchButtonAccessible -->
-        <test-method signature="VerifySearchStocksButtonPresent()[pri:0, instance:tickertapeFW.portfolio@48aca48b]" started-at="2023-01-23T20:55:02 IST" name="VerifySearchStocksButtonPresent" finished-at="2023-01-23T20:55:02 IST" duration-ms="112" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- setup -->
+        <test-method signature="mmiLogoTest()[pri:2, instance:tickertapeFW.mmi@3232a28a]" started-at="2023-03-02T20:52:16 IST" name="mmiLogoTest" finished-at="2023-03-02T20:52:21 IST" duration-ms="5192" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class="jsx-2679829868 jsx-2491292752 regular primary button-root"]"}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[Expected condition failed: waiting for visibility of all elements located by By.xpath: //*[@src="/images/svg/logos/mmi-by-tt-orange.svg"] (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [35431805e9302343b53ef41c1edf469f, findElement {using=xpath, value=//button[@class="jsx-2679829868 jsx-2491292752 regular primary button-root"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49914}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49914/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 35431805e9302343b53ef41c1edf469f]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51236/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 393e68a9272598e4c8d56157480a2d35]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class="jsx-2679829868 jsx-2491292752 regular primary button-root"]"}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //*[@src="/images/svg/logos/mmi-by-tt-orange.svg"] (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [35431805e9302343b53ef41c1edf469f, findElement {using=xpath, value=//button[@class="jsx-2679829868 jsx-2491292752 regular primary button-root"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49914}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49914/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 35431805e9302343b53ef41c1edf469f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-at tickertapeFW.portfolio.VerifySearchStocksButtonPresent(portfolio.java:69)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51236/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 393e68a9272598e4c8d56157480a2d35
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at tickertapeFW.common.isDisplayed(common.java:31)
+at tickertapeFW.mmi.mmiLogoTest(mmi.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -71,502 +48,29 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySearchStocksButtonPresent -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:tickertapeFW.portfolio@48aca48b]" started-at="2023-01-23T20:55:02 IST" name="TearDown" finished-at="2023-01-23T20:55:03 IST" duration-ms="586" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- tickertapeFW.portfolio -->
-      <class name="tickertapeFW.loginFunctionality">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.loginFunctionality@4c1909a3]" started-at="2023-01-23T20:56:36 IST" name="setup" finished-at="2023-01-23T20:56:40 IST" duration-ms="4048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="emptyInputTest()[pri:6, instance:tickertapeFW.loginFunctionality@4c1909a3]" started-at="2023-01-23T20:56:40 IST" name="emptyInputTest" finished-at="2023-01-23T20:56:43 IST" duration-ms="2870" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyInputTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.loginFunctionality@4c1909a3]" started-at="2023-01-23T20:56:43 IST" name="close" finished-at="2023-01-23T20:56:43 IST" duration-ms="323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.loginFunctionality@4c1909a3]" started-at="2023-01-23T20:56:43 IST" name="setup" finished-at="2023-01-23T20:56:48 IST" duration-ms="4853" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="invalidInputTest()[pri:6, instance:tickertapeFW.loginFunctionality@4c1909a3]" started-at="2023-01-23T20:56:48 IST" name="invalidInputTest" finished-at="2023-01-23T20:56:51 IST" duration-ms="3078" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidInputTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.loginFunctionality@4c1909a3]" started-at="2023-01-23T20:56:51 IST" name="close" finished-at="2023-01-23T20:56:51 IST" duration-ms="375" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.loginFunctionality@4c1909a3]" started-at="2023-01-23T20:56:51 IST" name="setup" finished-at="2023-01-23T20:56:57 IST" duration-ms="5539" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validInputTest()[pri:7, instance:tickertapeFW.loginFunctionality@4c1909a3]" started-at="2023-01-23T20:56:57 IST" name="validInputTest" finished-at="2023-01-23T20:57:01 IST" duration-ms="3738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validInputTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.loginFunctionality@4c1909a3]" started-at="2023-01-23T20:57:01 IST" name="close" finished-at="2023-01-23T20:57:01 IST" duration-ms="321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- tickertapeFW.loginFunctionality -->
-      <class name="tickertapeFW.mfScreener">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mfScreener@29215f06]" started-at="2023-01-23T20:57:06 IST" name="setup" finished-at="2023-01-23T20:57:09 IST" duration-ms="3083" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AddFillterFUniverseTabTest()[pri:9, instance:tickertapeFW.mfScreener@29215f06]" started-at="2023-01-23T20:57:09 IST" name="AddFillterFUniverseTabTest" finished-at="2023-01-23T20:57:11 IST" duration-ms="1730" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddFillterFUniverseTabTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mfScreener@29215f06]" started-at="2023-01-23T20:57:11 IST" name="close" finished-at="2023-01-23T20:57:11 IST" duration-ms="264" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mfScreener@29215f06]" started-at="2023-01-23T20:57:15 IST" name="setup" finished-at="2023-01-23T20:57:18 IST" duration-ms="2675" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="CustomMFUniverseTabTest()[pri:10, instance:tickertapeFW.mfScreener@29215f06]" started-at="2023-01-23T20:57:18 IST" name="CustomMFUniverseTabTest" finished-at="2023-01-23T20:57:20 IST" duration-ms="1514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CustomMFUniverseTabTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mfScreener@29215f06]" started-at="2023-01-23T20:57:20 IST" name="close" finished-at="2023-01-23T20:57:20 IST" duration-ms="313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- tickertapeFW.mfScreener -->
-      <class name="tickertapeFW.watchlist">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.watchlist@6bd61f98]" started-at="2023-01-23T20:55:41 IST" name="setup" finished-at="2023-01-23T20:55:45 IST" duration-ms="4086" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="url_Test()[pri:1, instance:tickertapeFW.watchlist@6bd61f98]" started-at="2023-01-23T20:55:45 IST" name="url_Test" finished-at="2023-01-23T20:55:45 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- url_Test -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.watchlist@6bd61f98]" started-at="2023-01-23T20:55:45 IST" name="close" finished-at="2023-01-23T20:55:45 IST" duration-ms="296" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.watchlist@6bd61f98]" started-at="2023-01-23T20:55:49 IST" name="setup" finished-at="2023-01-23T20:55:53 IST" duration-ms="3848" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginHoverTest()[pri:2, instance:tickertapeFW.watchlist@6bd61f98]" started-at="2023-01-23T20:55:53 IST" name="loginHoverTest" finished-at="2023-01-23T20:55:56 IST" duration-ms="2414" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginHoverTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.watchlist@6bd61f98]" started-at="2023-01-23T20:55:56 IST" name="close" finished-at="2023-01-23T20:55:56 IST" duration-ms="303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- tickertapeFW.watchlist -->
-      <class name="tickertapeFW.stockSearch">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.stockSearch@13fd2ccd]" started-at="2023-01-23T20:55:45 IST" name="setup" finished-at="2023-01-23T20:55:45 IST" duration-ms="1" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50129}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50129/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50129}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50129/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:946)
-at tickertapeFW.stockSearch.setup(stockSearch.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_dropdown_clickability()[pri:1, instance:tickertapeFW.stockSearch@13fd2ccd]" started-at="2023-01-23T20:55:45 IST" name="verify_dropdown_clickability" finished-at="2023-01-23T20:55:45 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50129}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50129/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50129}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50129/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:946)
-at tickertapeFW.stockSearch.setup(stockSearch.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_dropdown_clickability -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.stockSearch@13fd2ccd]" started-at="2023-01-23T20:55:45 IST" name="close" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1674487545912" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.stockSearch@13fd2ccd]" started-at="2023-01-23T20:56:09 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1674487569674" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_dropdown_editable()[pri:2, instance:tickertapeFW.stockSearch@13fd2ccd]" started-at="2023-01-23T20:56:09 IST" name="verify_dropdown_editable" finished-at="2023-01-23T20:56:09 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50129}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50129/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\bhaye\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50129}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50129/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:946)
-at tickertapeFW.stockSearch.setup(stockSearch.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_dropdown_editable -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.stockSearch@13fd2ccd]" started-at="2023-01-23T20:56:09 IST" name="close" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1674487569679" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- tickertapeFW.stockSearch -->
-      <class name="tickertapeFW.mmi">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:55:35 IST" name="setup" finished-at="2023-01-23T20:55:38 IST" duration-ms="3066" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="urlTest()[pri:1, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:55:38 IST" name="urlTest" finished-at="2023-01-23T20:55:38 IST" duration-ms="32" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:55:38 IST" name="close" finished-at="2023-01-23T20:55:38 IST" duration-ms="357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:55:45 IST" name="setup" finished-at="2023-01-23T20:55:49 IST" duration-ms="3212" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="helpButtonTest()[pri:2, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:55:49 IST" name="helpButtonTest" finished-at="2023-01-23T20:55:49 IST" duration-ms="373" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- helpButtonTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:55:49 IST" name="close" finished-at="2023-01-23T20:55:49 IST" duration-ms="412" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:55:59 IST" name="setup" finished-at="2023-01-23T20:56:03 IST" duration-ms="4646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="mmiLogoTest()[pri:2, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:03 IST" name="mmiLogoTest" finished-at="2023-01-23T20:56:03 IST" duration-ms="111" status="PASS">
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mmiLogoTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:03 IST" name="close" finished-at="2023-01-23T20:56:04 IST" duration-ms="322" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:04 IST" name="setup" finished-at="2023-01-23T20:56:09 IST" duration-ms="5020" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="mmiTextTest()[pri:2, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:09 IST" name="mmiTextTest" finished-at="2023-01-23T20:56:09 IST" duration-ms="106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mmiTextTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:09 IST" name="close" finished-at="2023-01-23T20:56:09 IST" duration-ms="337" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:09 IST" name="setup" finished-at="2023-01-23T20:56:12 IST" duration-ms="2971" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="hover1Test()[pri:3, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:12 IST" name="hover1Test" finished-at="2023-01-23T20:56:13 IST" duration-ms="514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hover1Test -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:13 IST" name="close" finished-at="2023-01-23T20:56:13 IST" duration-ms="281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:13 IST" name="setup" finished-at="2023-01-23T20:56:16 IST" duration-ms="2968" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="hover2Test()[pri:3, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:16 IST" name="hover2Test" finished-at="2023-01-23T20:56:16 IST" duration-ms="557" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hover2Test -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:16 IST" name="close" finished-at="2023-01-23T20:56:17 IST" duration-ms="387" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:17 IST" name="setup" finished-at="2023-01-23T20:56:21 IST" duration-ms="4298" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="hover3Test()[pri:3, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:21 IST" name="hover3Test" finished-at="2023-01-23T20:56:21 IST" duration-ms="285" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hover3Test -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:21 IST" name="close" finished-at="2023-01-23T20:56:22 IST" duration-ms="403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:22 IST" name="setup" finished-at="2023-01-23T20:56:27 IST" duration-ms="5145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="hover5Test()[pri:3, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:27 IST" name="hover5Test" finished-at="2023-01-23T20:56:27 IST" duration-ms="310" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hover5Test -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:27 IST" name="close" finished-at="2023-01-23T20:56:28 IST" duration-ms="382" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:28 IST" name="setup" finished-at="2023-01-23T20:56:31 IST" duration-ms="3450" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="historyTest()[pri:4, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:31 IST" name="historyTest" finished-at="2023-01-23T20:56:31 IST" duration-ms="314" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- historyTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:31 IST" name="close" finished-at="2023-01-23T20:56:32 IST" duration-ms="379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:32 IST" name="setup" finished-at="2023-01-23T20:56:35 IST" duration-ms="3337" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="shareButtonTest()[pri:5, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:35 IST" name="shareButtonTest" finished-at="2023-01-23T20:56:35 IST" duration-ms="279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shareButtonTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mmi@59505b48]" started-at="2023-01-23T20:56:35 IST" name="close" finished-at="2023-01-23T20:56:36 IST" duration-ms="390" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.mmi@3232a28a]" started-at="2023-03-02T20:52:21 IST" name="close" finished-at="2023-03-02T20:52:21 IST" duration-ms="419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- tickertapeFW.mmi -->
-      <class name="tickertapeFW.stockDeals">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.stockDeals@4efac082]" started-at="2023-01-23T20:55:38 IST" name="setup" finished-at="2023-01-23T20:55:41 IST" duration-ms="2400" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="urlTest()[pri:1, instance:tickertapeFW.stockDeals@4efac082]" started-at="2023-01-23T20:55:41 IST" name="urlTest" finished-at="2023-01-23T20:55:41 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.stockDeals@4efac082]" started-at="2023-01-23T20:55:41 IST" name="close" finished-at="2023-01-23T20:55:41 IST" duration-ms="281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.stockDeals@4efac082]" started-at="2023-01-23T20:55:56 IST" name="setup" finished-at="2023-01-23T20:55:58 IST" duration-ms="2295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="logoIconTest()[pri:2, instance:tickertapeFW.stockDeals@4efac082]" started-at="2023-01-23T20:55:58 IST" name="logoIconTest" finished-at="2023-01-23T20:55:58 IST" duration-ms="103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoIconTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.stockDeals@4efac082]" started-at="2023-01-23T20:55:58 IST" name="close" finished-at="2023-01-23T20:55:59 IST" duration-ms="244" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- tickertapeFW.stockDeals -->
-      <class name="tickertapeFW.logoutFunctionality">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.logoutFunctionality@428640fa]" started-at="2023-01-23T20:55:03 IST" name="setup" finished-at="2023-01-23T20:55:06 IST" duration-ms="3233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="logoutTest()[pri:0, instance:tickertapeFW.logoutFunctionality@428640fa]" started-at="2023-01-23T20:55:06 IST" name="logoutTest" finished-at="2023-01-23T20:55:35 IST" duration-ms="28427" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.logoutFunctionality@428640fa]" started-at="2023-01-23T20:55:35 IST" name="close" finished-at="2023-01-23T20:55:35 IST" duration-ms="330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- tickertapeFW.logoutFunctionality -->
-      <class name="tickertapeFW.landingPage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.landingPage@306e95ec]" started-at="2023-01-23T20:57:01 IST" name="setup" finished-at="2023-01-23T20:57:05 IST" duration-ms="3582" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="backToHomeTextdisplayTest()[pri:8, instance:tickertapeFW.landingPage@306e95ec]" started-at="2023-01-23T20:57:05 IST" name="backToHomeTextdisplayTest" finished-at="2023-01-23T20:57:06 IST" duration-ms="1421" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- backToHomeTextdisplayTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.landingPage@306e95ec]" started-at="2023-01-23T20:57:06 IST" name="close" finished-at="2023-01-23T20:57:06 IST" duration-ms="338" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.landingPage@306e95ec]" started-at="2023-01-23T20:57:11 IST" name="setup" finished-at="2023-01-23T20:57:15 IST" duration-ms="3605" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="SearchBoxDisplayTest()[pri:9, instance:tickertapeFW.landingPage@306e95ec]" started-at="2023-01-23T20:57:15 IST" name="SearchBoxDisplayTest" finished-at="2023-01-23T20:57:15 IST" duration-ms="130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchBoxDisplayTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.landingPage@306e95ec]" started-at="2023-01-23T20:57:15 IST" name="close" finished-at="2023-01-23T20:57:15 IST" duration-ms="326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tickertapeFW.landingPage@306e95ec]" started-at="2023-01-23T20:57:20 IST" name="setup" finished-at="2023-01-23T20:57:24 IST" duration-ms="3533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchBoxFunctionalityTest()[pri:10, instance:tickertapeFW.landingPage@306e95ec]" started-at="2023-01-23T20:57:24 IST" name="searchBoxFunctionalityTest" finished-at="2023-01-23T20:57:24 IST" duration-ms="260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBoxFunctionalityTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tickertapeFW.landingPage@306e95ec]" started-at="2023-01-23T20:57:24 IST" name="close" finished-at="2023-01-23T20:57:24 IST" duration-ms="313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- tickertapeFW.landingPage -->
-    </test> <!-- tickertapeFW -->
-  </suite> <!-- tickertapeFW -->
+    </test> <!-- Default test(failed)(failed) -->
+  </suite> <!-- Failed suite [Failed suite [Default suite]] -->
 </testng-results>
